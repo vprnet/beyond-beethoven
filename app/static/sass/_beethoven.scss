@@ -1,0 +1,144 @@
+$border_gray: lighten($gray, 10%);
+$border_gray2: lighten($gray, 10%);
+
+body {
+    color: $black;
+    background: $black;
+    p {
+        font-weight: 300;
+    }
+}
+
+#header {
+    padding: 20px 0 40px;
+    background: darken($black, 20%);
+    color: white;
+    h2 {
+        font-size: 82px;
+    }
+    h4 {
+        margin-top: 60px;
+        color: lighten($gray, 35%);
+        span#and_the {
+            display: block;
+            margin-top: 5px
+        }
+        span.production_of {
+            margin-top: 5px;
+            color: lighten($gray, 50%);
+            display: block;
+            font-size: 32px;
+        }
+    }
+    img {
+        margin-top: 20px;
+        float: right;
+    }
+}
+
+#music_block {
+    background: white;
+    padding-top: 30px;
+    div.music {
+        padding: 20px;
+        margin-bottom: 20px;
+        h3 {
+            font-size: 26px;
+            font-weight: 600;
+            padding-top: 25px;
+            margin-bottom: 0;
+            border-top: 5px solid $border_gray;
+        }
+        h4 {
+            color: lighten($black, 20%);
+            font-size: 22px;
+            margin-top: 0;
+        }
+        p {
+            min-height: 120px;
+            padding-bottom: 10px;
+            font-size: 18px;
+        }
+        iframe {
+            margin-bottom: 30px;
+            max-width: 595px;
+        }
+    }
+}
+
+#photo_gallery {
+    background: $black;
+    padding: 60px 0 0;
+    img {
+        border-top: 5px solid $border_gray;
+        padding-top: 30px;
+    }
+}
+
+hr {
+    padding: 0 auto;
+    border-top: 5px solid $border_gray;
+}
+
+#about_project, #bios {
+    background: $black;
+    color: white;
+    padding: 40px 0 0;
+    h3, h4 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 20px;
+        color: lighten($gray, 40%);
+    }
+    hr {
+        border-color: $border_gray2;
+    }
+}
+
+#about_project {
+    #google-ad {
+        float: right;
+    }
+    h3 {
+        margin-bottom: 30px;
+    }
+}
+
+#bios {
+    img {
+        border-top: 5px solid $border_gray2;
+        padding-top: 30px;
+    }
+    h4 {
+        margin-top: 30px;
+    }
+}
+
+
+#bios {
+    background: $black;
+    color: white;
+    padding: 60px 0;
+    h4 {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+    img {
+        border-top: 5px solid $border_gray2;
+        padding-top: 30px;
+    }
+    p {
+        font-size: 18px;
+        color: lighten($gray, 40%);
+    }
+}
+
+#footer_container {
+    background: $black;
+}
+
+footer p {
+    color: lighten($gray, 40%);
+    font-size: 10px;
+}
