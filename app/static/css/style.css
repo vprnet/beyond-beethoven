@@ -2322,6 +2322,30 @@ body {
   #header img {
     margin-top: 20px;
     float: right; }
+  @media (max-width: 1200px) {
+    #header h2 {
+      font-size: 62px; } }
+  @media (max-width: 992px) {
+    #header h2 {
+      font-size: 42px; }
+    #header h4 span.production_of {
+      font-size: 28px; }
+    #header img {
+      margin-top: 10px; } }
+  @media (max-width: 768px) {
+    #header h2 {
+      font-size: 28px; }
+    #header img {
+      float: none;
+      margin: 0 auto; }
+    #header h4 {
+      margin-top: 15px;
+      font-size: 14px; }
+      #header h4 span.production_of {
+        font-size: 20px;
+        margin-top: 0; }
+      #header h4 span#and_the {
+        margin-top: 0; } }
 
 #music_block {
   background: white;
@@ -2346,10 +2370,24 @@ body {
     #music_block div.music iframe {
       margin-bottom: 30px;
       max-width: 595px; }
+  @media (max-width: 992px) {
+    #music_block div.music p {
+      min-height: 160px;
+      font-size: 16px;
+      font-weight: 400; } }
+  @media (max-width: 768px) {
+    #music_block div.music p {
+      min-height: 0;
+      font-size: 16px; } }
 
 #photo_gallery {
   background: #3f4444;
   padding: 60px 0 0; }
+  @media (max-width: 768px) {
+    #photo_gallery img {
+      margin-bottom: 30px; }
+    #photo_gallery #last_photo {
+      margin-bottom: 0; } }
 
 hr {
   padding: 0 auto;
@@ -2371,6 +2409,9 @@ hr {
   float: right; }
 #about_project h3 {
   margin-bottom: 30px; }
+@media (max-width: 768px) {
+  #about_project p {
+    font-size: 16px; } }
 
 #bios img {
   border-top: 5px solid #8f9294;
@@ -2391,6 +2432,16 @@ hr {
   #bios p {
     font-size: 18px;
     color: #dddedf; }
+  @media (max-width: 992px) {
+    #bios img {
+      margin: 0 auto; }
+    #bios h4 {
+      margin-top: 40px; }
+    #bios #second_bio {
+      margin-top: 60px; } }
+  @media (max-width: 768px) {
+    #bios p {
+      font-size: 16px; } }
 
 #footer_container {
   background: #3f4444; }
