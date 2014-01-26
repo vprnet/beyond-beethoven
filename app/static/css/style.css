@@ -2350,9 +2350,6 @@ body {
 #photo_gallery {
   background: #3f4444;
   padding: 60px 0 0; }
-  #photo_gallery img {
-    border-top: 5px solid #8f9294;
-    padding-top: 30px; }
 
 hr {
   padding: 0 auto;
