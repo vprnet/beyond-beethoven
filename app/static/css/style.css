@@ -2370,6 +2370,9 @@ body {
     #music_block div.music iframe {
       margin-bottom: 30px;
       max-width: 595px; }
+  @media (max-width: 1200px) {
+    #music_block div.music p {
+      min-height: 140px; } }
   @media (max-width: 992px) {
     #music_block div.music p {
       min-height: 160px;
@@ -2405,13 +2408,26 @@ hr {
   #about_project hr, #bios hr {
     border-color: #8f9294; }
 
-#about_project #google-ad {
-  float: right; }
+#about_project #uw {
+  float: right;
+  text-align: center;
+  max-width: 300px; }
 #about_project h3 {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: left; }
+@media (max-width: 992px) {
+  #about_project #uw #uw_margin {
+    margin: 0 auto; }
+  #about_project #uw #google-ad {
+    float: none; } }
 @media (max-width: 768px) {
+  #about_project #uw {
+    margin-top: 45px; }
   #about_project p {
     font-size: 16px; } }
+@media (max-width: 330px) {
+  #about_project #google-ad {
+    margin-left: -5px; } }
 
 #bios img {
   border-top: 5px solid #8f9294;
