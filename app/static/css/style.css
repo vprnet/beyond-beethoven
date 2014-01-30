@@ -2287,14 +2287,19 @@ div.audio_player {
     vertical-align: top; }
   div.audio_player .play {
     width: 100%; }
-  div.audio_player .duration {
-    float: right;
+  div.audio_player .duration, div.audio_player .audio_title {
+    position: absolute;
+    top: 2px;
     color: #307fe2;
     font-weight: 500;
     height: 40px;
     padding: 8px 30px 8px;
     text-align: right;
     font-size: 14px; }
+  div.audio_player .duration {
+    right: 10px; }
+  div.audio_player .audio_title {
+    left: 40px; }
 
 body {
   color: #3f4444;
