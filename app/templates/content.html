@@ -26,16 +26,15 @@
                 <h3>Cello Sonata No. 2 in D Major, Op. 58</h3>
                 <h4>Felix Mendelssohn</h4>
                 <p>Ben and David introduce Mendelssohn's two cello sonatas as the successors to the cello sonatas of Beethoven, beginning with the virtuosic D Major Sonata.</p>
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/73368218&amp;color=307ef2&amp;auto_play=false&amp;show_artwork=true"></iframe>
-
-                {{ macros.player('https://s3.amazonaws.com/www.vpr.net/apps/faces/static/mp3/peter_fox_smith+1.mp3', 'https://s3.amazonaws.com/www.vpr.net/apps/sandbox/static/peter_fox_smith.ogg', '16', 'Please Test Me') }}
+                {{ macros.player(interview_base_url, interview[0], '491', 'Inside Mendelssohn Op 58') }}
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/132560656&amp;color=307fe2&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
             </div>
             <div class="music col-sm-6">
                 <h3>Cello Sonata No. 1 in E Minor, Op. 38</h3>
                 <h4>Johannes Brahms</h4>
                 <p>The first cello sonata of Brahms represents an introspective turn from the two cello sonatas of Mendelssohn.  It looks forward in many ways, but with characteristics like its second movement minuet, it also looks back.</p>
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/73368218&amp;color=307ef2&amp;auto_play=false&amp;show_artwork=true"></iframe>
-                {{ macros.player('https://s3.amazonaws.com/www.vpr.net/apps/faces/static/mp3/peter_fox_smith+1.mp3', 'https://s3.amazonaws.com/www.vpr.net/apps/sandbox/static/peter_fox_smith.ogg', '16', 'Please Test Me') }}
+                {{ macros.player(interview_base_url, interview[1], '541', 'Inside Brahms Op 38') }}
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/132559684&amp;color=307fe2&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
             </div>
         </div>
         <div class="row">
@@ -43,15 +42,15 @@
                 <h3>Cello Sonata No. 1 in B-flat Major, Op. 45</h3>
                 <h4>Felix Mendelssohn</h4>
                 <p>Ben and David reflect on the relative neglect of Mendelssohn's first cello sonata, as well as provide a bit of their own performance history as a duo.</p>
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/73368218&amp;color=307ef2&amp;auto_play=false&amp;show_artwork=true"></iframe>
-                {{ macros.player('https://s3.amazonaws.com/www.vpr.net/apps/faces/static/mp3/peter_fox_smith+1.mp3', 'https://s3.amazonaws.com/www.vpr.net/apps/sandbox/static/peter_fox_smith.ogg', '16', 'Please Test Me') }}
+                {{ macros.player(interview_base_url, interview[2], '529', 'Inside Mendelssohn Op 45') }}
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/132560182&amp;color=307fe2&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
             </div>
             <div class="music col-sm-6">
                 <h3>Cello Sonata No. 2 in F Major, Op. 99</h3>
                 <h4>Johannes Brahms</h4>
                 <p>The "Beyond Beethoven" cycle concludes with the monumental Cello Sonata No. 2 by Johannes Brahms.  Innovative in many ways, it pushes the players to the limits of their technical abilities and requires them to think on an orchestral scale.</p>
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/73368218&amp;color=307ef2&amp;auto_play=false&amp;show_artwork=true"></iframe>
-                {{ macros.player('https://s3.amazonaws.com/www.vpr.net/apps/faces/static/mp3/peter_fox_smith+1.mp3', 'https://s3.amazonaws.com/www.vpr.net/apps/sandbox/static/peter_fox_smith.ogg', '16', 'Please Test Me') }}
+                {{ macros.player(interview_base_url, interview[3], '597', 'Inside Brahms Op 99') }}
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/132410751&amp;color=307fe2&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
             </div>
         </div>
     </div>
@@ -68,6 +67,11 @@
             </div>
             <div class="col-sm-4">
                 <img id="last_photo" class="img-responsive" src="{{ url_for('static', filename='img/vpr_beyond_beethoven_ss3.jpg') }}">
+            </div>
+        </div>
+        <div class-"row">
+            <div class="col-xs-12">
+                <p id="photo_credit">Above photos by <a href="http://www.alisonredlichphotography.com/" alt="Alison Redlich Photography">Alison Redlich</a></p>
             </div>
         </div>
     </div>
@@ -102,17 +106,28 @@
         <div class="row">
             <div class="col-md-6">
                 <img class="img-responsive" src="{{ url_for('static', filename='img/david_kaplan_beyond_beethoven.jpg') }}" alt="David Kaplan">
-                <h4>David Kaplan</h4>
-                <p>David Kaplan, pianist, has been praised for his "grace and fire" by the Boston Globe, and by The New York Times for "striking imagination and creativity." Recent seasons have brought him as a recitalist to Los Angeles, Berlin, Barcelona, Chicago, and New York, and as a chamber musician in the US, Germany, Italy, Switzerland and Denmark. He has appeared as a guest soloist of the Orpheus Chamber Orchestra, and performed at Miami's Arscht Center with Itzhak Perlman. David is a veteran of many distinguished chamber music festivals and series: he has appeared at the Seattle Chamber Music Festival, the Chamber Music Society of Lincoln Center, Chamber Music Northwest, Barge Music, and the Canadian festivals of Banff and Orford.  In addition, he has been a guest at Ravinia, Tanglewood, Bard, and the Mostly Mozart Festival, where he performed in Avery Fisher Hall.  As a member of the New York-based Metropolis, Le Train Bleu, Declassified, and ACJW Ensembles, David has performed frequently in New York's most exciting venues, from Zankel Hall to Le Poisson Rouge.</p>
-                <p>Since 2011, Kaplan is Co-Artistic Director of Lyrica Chamber Music, a New Jersey concert series now in its twenty-sixth season. Kaplan's enthusiasm for contemporary music has led him to premiere dozens of works, including piano concertos by Timothy Andres (2008) and Alex Weston (2012).  Versatile far beyond the modern keyboard, Kaplan's credits as a harpsichordist include Elliott Carter's Sonata and the world premiere of Conrad Winslow's Chariots, both for harpsichord and chamber ensemble, as well as numerous performances of Bach's 5th Brandenburg with the Ensemble ACJW.  Kaplan has drawn special notice as a Beethoven interpreter: he was featured in WQXR's 2011 Beethoven Sonata Marathon, and his interpretations of the complete cello sonatas with Benjamin Capps were hailed by the Rutland Herald as "masterful and deeply compelling performances, seldom heard at this level except by the great masters."  A candidate for the DMA at Yale University, Kaplan's distinguished mentors over the years include Claude Frank, Alfred Brendel, Richard Goode, and Emanuel Ax.  Under the auspices of a Fulbright Grant, he studied conducting with Lutz Khler at the Universitt der Knste in Berlin.  Away from the keyboard, he devotes time to cartooning and cooking, and is mildly obsessed with classic cars.  David Kaplan is a Yamaha Artist.</p>
+                <h4><a href="http://www.davidkaplanpiano.com" href="David Kaplan's website">David Kaplan</a></h4>
+                <p>David Kaplan, pianist, has been praised for his "grace and fire" by the Boston Globe, and by The New York Times for "striking imagination and creativity." Recent seasons have brought him as a recitalist to Los Angeles, Berlin, Barcelona, Chicago, and New York, and as a chamber musician in the US, Germany, Italy, Switzerland and Denmark. He has appeared as a guest soloist of the Orpheus Chamber Orchestra, and performed at Miami's Arscht Center with Itzhak Perlman. David is a veteran of many distinguished chamber music festivals and series: he has appeared at the Seattle Chamber Music Festival, the Chamber Music Society of Lincoln Center, Chamber Music Northwest, Barge Music, and the Canadian festivals of Banff and Orford.  In addition, he has been a guest at Ravinia, Tanglewood, Bard, and the Mostly Mozart Festival, where he performed in Avery Fisher Hall.  As a member of the New York-based Metropolis, Le Train Bleu, Declassified, and ACJW Ensembles, David has performed frequently in New Yorkís most exciting venues, from Zankel Hall to Le Poisson Rouge. Since 2011, Kaplan is Co-Artistic Director of Lyrica Chamber Music, a New Jersey concert series now in its twenty-sixth season.</p>
+                <p>Kaplan's enthusiasm for contemporary music has led him to premiere dozens of works, including piano concertos by Timothy Andres (2008) and Alex Weston (2012).  Versatile far beyond the modern keyboard, Kaplan's credits as a harpsichordist include Elliott Carter's Sonata and the world premiere of Conrad Winslow's Chariots, both for harpsichord and chamber ensemble, as well as numerous performances of Bach's 5th Brandenburg with the Ensemble ACJW.  Kaplan has drawn special notice as a Beethoven interpreter: he was featured in WQXR's 2011 Beethoven Sonata Marathon, and his interpretations of the complete cello sonatas with Benjamin Capps were hailed by the Rutland Herald as "masterful and deeply compelling performances, seldom heard at this level except by the great masters."  A candidate for the DMA at Yale University, Kaplan distinguished mentors over the years include Claude Frank, Alfred Brendel, Richard Goode, and Emanuel Ax.  Under the auspices of a Fulbright Grant, he studied conducting with Lutz K&ouml;hler at the Universit&auml;t der K&uuml;nste in Berlin.  Away from the keyboard, he devotes time to cartooning and cooking, and is mildly obsessed with classic cars.  David Kaplan is a Yamaha Artist.</p>
             </div>
             <div id="second_bio" class="col-md-6">
                 <img class="img-responsive" src="{{ url_for('static', filename='img/ben_capps_beyond_beethoven.jpg') }}" alt="David Kaplan">
-                <h4>Benjamin Capps</h4>
-                <p>Exciting young American cellist Benjamin Elton Capps enjoys an extraordinarily versatile performing career as a soloist, chamber musician and orchestral principal. His recently released recording of Andrew Violette's Songs and Dances (Innova) won raves from the Holland Times which hailed Benjamin as a "young cello phenomenon from New York" with "dazzling technique and a fearsomely meaty tone", and his playing has been praised as "most appealing" by the New York Times and "rich and human" by the New York Sun. He has performed at such prestigious venues as Carnegie Hall's Stern Auditorium, Weill Hall and Zankel Hall, Lincoln Center's Avery Fisher Hall, Alice Tully Hall, and Rose Hall, the Kennedy Center for the Performing Arts in Washington D.C., Mann Hall in Tel Aviv, Meyerson Hall in Dallas, and the Auditorio Nacional, the Palace of Fine Arts and Sala Nezahualcoytl in Mexico City. He has appeared as soloist with the Philharmonic Orchestra of the Americas, the Juilliard Pre-College Symphony, the Manhattan School of Music Composer's Orchestra, New York Concerti Sinfonietta, and his performance of the Schumann Cello Concerto at the 2010 Music Festival of the Americas in Vermont was hailed as "virtuosic and impassioned" (Barre Montpelier Times).</p>
-                <p>Mr. Capps is passionate about music education and community outreach. He is a Teaching Assistant at Juilliard, a position he has held since 2009. Since 2008, he has taught in Philharmonic Orchestra of the America¥s Arts and Education Program, an innovative program in partnership with the New York City Department of Education which encourages artistic creativity by introducing young public school students to the fundamentals of music composition.</p>
+                <h4><a href="http://bencapps.com" alt="Ben Capps personal website">Benjamin Capps</a></h4>
+                <p>Exciting young American cellist Benjamin Elton Capps enjoys an extraordinarily versatile performing career as a soloist, chamber musician and orchestral principal. His recently released recording of Andrew Violette's Songs and Dances (Innova) won raves from the Holland Times which hailed Benjamin as a "young cello phenomenon from New York" with "dazzling technique and a fearsomely meaty tone", and his playing has been praised as "most appealing" by the New York Times and "rich...and human" by the New York Sun. He has performed at such prestigious venues as Carnegie Hall's Stern Auditorium, Weill Hall and Zankel Hall, Lincoln Center's Avery Fisher Hall, Alice Tully Hall, and Rose Hall, the Kennedy Center for the Performing Arts in Washington D.C., Mann Hall in Tel Aviv, Meyerson Hall in Dallas, and the Auditorio Nacional, the Palace of Fine Arts and Sala Nezahualcoytl in Mexico City. He has appeared as soloist with the Philharmonic Orchestra of the Americas, the Juilliard Pre-College Symphony, the Manhattan School of Music Composer's Orchestra, New York Concerti Sinfonietta, and his performance of the Schumann Cello Concerto at the 2010 Music Festival of the Americas in Vermont was hailed as "virtuosic and impassioned" (Barre Montpelier Times).</p>
+                <p>Mr. Capps is passionate about music education and community outreach. He is a Teaching Assistant at Juilliard, a position he has held since 2009. Since 2008, he has taught in Philharmonic Orchestra of the America's Arts and Education Program, an innovative program in partnership with the New York City Department of Education which encourages artistic creativity by introducing young public school students to the fundamentals of music composition.</p>
                 <p>A native of New York City, Benjamin Capps began playing the cello at age four with Nellis DeLay at Manhattan's School For Strings, continuing at Juilliard Pre-College with Anne Alton and modern cello guru Fred Sherry. He received a Bachelor of Music degree from Manhattan School of Music in 2008, and was awarded a Master of Music Degree from Juilliard in May 2010, both under the guidance of David Soyer. He is the recipient of many awards, including the New York State Association of Music Teachers Scholarship Competition 1999; Juilliard Pre-College Symphony, Concerto Competition, 2001, the Lillian Fuchs Award, 2004, the Francis Goelet Scholarship, Juilliard 2008-2009, and the Irving Mulde Scholarship, Juilliard, 2009-10. He has coached with numerous cellists, among them Bernard Greenhouse, Ko Iwasaki, Paul Katz, and Nathanial Rosen, has performed in master class for Steven Isserlis Alexander Rudin, Mischa Maisky, Natalia Gutman, Peter Wiley, Timothy Eddy, Matt Haimowitz and Jonathan Biss, and has coached chamber music with Joseph Kalichstein, Sylvia Rosenberg, Isidore Cohen, Seymour Lipkin, Alexander Slobodyanik, Andre Michel Schub, and Vivian Weilerstein. Mr. Capps makes his home in New York City.</p>
             </div>
+        </div>
+    </div>
+</div>
+
+<div id="credits" class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h4>Credits</h4>
+            <p><a href="http://twitter.com/VPRCL_Goetz">Joe Goetz</a> / Producer</p>
+            <p><a href="http://digital.vpr.net/people/john-billingsley">John Billingsley</a> / Audio Engineer</p>
+            <p><a href="http://twitter.com/mattparrilla">Matt Parrilla</a> / Web Developer</p>
         </div>
     </div>
 </div>

@@ -9,6 +9,16 @@ $percent: 3%;
 $btn-percent: 1%;
 $tablet: 768px;
 
+@mixin dk_link($bg, $font-color, $border-width) {
+    text-decoration: none;
+    border-bottom: $border-width solid lighten($bg, 10%);
+    color: darken($font-color, 5%);
+    &:hover {
+        border-color: lighten($bg, 40%);
+        color: $font-color;
+    }
+}
+
 body {
     padding-bottom: 40px;
 }
@@ -31,6 +41,8 @@ body {
     background-image: -o-linear-gradient(top, lighten($green, $percent), darken($green, $percent));
     min-height: 40px;
     border-color: darken($green, 20%);
+    border-radius: 0 !important;
+    border: 0;
     .navbar-header {
         float: none;
     }

@@ -26,6 +26,8 @@ content_types = {
     '.eot': 'application/vnd.ms-fontobject',
     '.ttf': 'font/opentype',
     '.woff': 'application/font-woff',
+    '.mp3': 'audio/mp3',
+    '.ogg': 'audio/ogg',
     '.json': 'text/json'
 }
 
