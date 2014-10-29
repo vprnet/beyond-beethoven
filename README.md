@@ -3,6 +3,14 @@ This stack is used by VPR to publish news apps and can be used for anything from
 
 This template assumes that your host is Webfaction and includes a good deal of VPR specific code. For a more generic template, see the [VPR App Template](http://github.com/vprnet/app-template) that was the basis for this template.
 
+## Deploying
+
+When new updates need to be deployed do the following:
+
+1. `cp app/_config.py app/config.py`
+2. Setup the AWS credentials in `app/config.py`
+3. Run `python app/index.py build` from the project root to deploy updates
+
 ## Author
 [Matt Parrilla](http://twitter.com/mattparrilla)
 
